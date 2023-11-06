@@ -1,199 +1,107 @@
 let body = document.querySelector("body");
 let root = document.querySelector("#root");
 
+// bnt.addeventListener("click", function(
+//     two.style.display = "block";
+//     one.style.display = "none";
+// ))
 
 root.style.width = "100vw";
 root.style.height = "100vh";
 root.style.display = "flex";
 root.style.alignItems = "center";
 root.style.justifyContent = "center";
+root.style.backgroundColor = "#EDF2F8";
 
-// let bacim = document.createElement("body");
-// bacim.style.maxWidth = "1450px"
-// bacim.style.height = "1040px"
-body.style.backgroundImage = "url(bg.png)";
-body.style.backgroundRepeat = "no-repeat";
-body.style.backgroundSize ="cover";
-// root.appendChild(bacim);
 
 
 let bac1 = document.createElement("div");
-bac1.style.width = "1045px";
-bac1.style.height = "507px";
-bac1.style.borderRadius = "36px";
-bac1.style.backgroundColor = "rgba(0, 161, 255, 0.40)";
+bac1.style.width = "730px";
+bac1.style.height = "280px";
+bac1.style.borderRadius = "10px";
+bac1.style.backgroundColor = "#FFF";
+bac1.style.boxShadow = "1px 20px 19px 4px #DBE5ED";
 bac1.style.margin = "0 auto";
-bac1.style.boxShadow = "24px 26px 4px -11px rgba(0, 0, 0, 0.50)";
-bac1.style.backdropFilter = "blur(10px)";
 root.appendChild(bac1);
 
+let container = document.createElement("div");
+container.style.display = "flex";
+container.style.gap = "40px";
+bac1.appendChild(container);
 
 
+let img = document.createElement("div");
+img.style.backgroundImage = "url(rec.png)";
+img.style.width = "285px";
+img.style.height = "280px";
+img.style.backgroundRepeat = "no-repeat";
+img.style.backgroundSize ="cover";
+container.appendChild(img);
 
-let secund = document.createElement("h3");
-secund.textContent = "Secundomer";
-secund.style.color = "#A5DEFF";
-secund.style.textAlign = "center";
-secund.style.fontSize = "32px";
-secund.style.fontFamily = "Inter";
-secund.style.letterSpacing = "6.4px";
-secund.style.padding = "15px";
-bac1.appendChild(secund);
+let shift = document.createElement("p");
+shift.style.width = "346px";
+shift.style.height = "84px";
+shift.textContent = `Shift the overall look and feel by adding 
+these wonderful touches to 
+furniture in your home`;
+shift.style.color = "#49556B";
+shift.style.fontSize = "20px";
+shift.style.letterSpacing = "0.42px";
+shift.style.lineHeight = "138%";
+shift.style.fontFamily = "Manrope";
+shift.style.fontWeight = "bold";
+shift.style.padding = "10px 59px 0 0";
+container.appendChild(shift);
 
+let ever = document.createElement("p");
+ever.textContent = `Ever been in a room and felt like something  was missing?
+Perhaps it felt slightly bare and uninviting. I’ve got some 
+simple tips to help ypu make any room feel complete.`;
+ever.style.fontSize = "12.5px";
+ever.style.color = "#73859D";
+ever.style.fontWeight = "500px";
+ever.style.fontHeigth = "20px";
+ever.style.letterSpacing = "0.313px";
+shift.appendChild(ever);
 
+let myname = document.createElement("div");
+myname.style.display = "flex";
+myname.style.alignItems = "center";
+myname.style.justifyContent = "star";
 
-let horsMinut = document.createElement("div");
-horsMinut.style.display = "flex";
-horsMinut.style.justifyContent = "space-between";
-horsMinut.style.padding = "0 50px 0 50px"
-bac1.appendChild(horsMinut);
+shift.appendChild(myname);
 
-let hours = document.createElement("div");
-hours.style.width = "199px";
-hours.style.height = "199px";
-hours.style.backgroundColor = "#080F1A";
-hours.style.borderRadius = "22px";
-horsMinut.appendChild(hours);
+let myimg = document.createElement("div");
+myimg.style.backgroundImage = "url(avatar.png)";
+myimg.style.width = "40px";
+myimg.style.height = "40px";
+myimg.style.backgroundRepeat = "no-repeat";
+myimg.style.backgroundSize ="cover";
+myname.appendChild(myimg);
 
+let namcap = document.createElement("div");
+namcap.textContent = "Sardorjon Khayrullayev";
+namcap.style.fontSize = "12.5px";
+namcap.style.color = "#49556B";
+namcap.style.letterSpacing = "0.188px";
+namcap.style.marginLeft = "16px";
+myname.appendChild(namcap);
 
-
-let hoursTittle = document.createElement("h1");
-hoursTittle.textContent = "360";
-hoursTittle.style.textAlign = "center";
-hoursTittle.style.fontSize = "64px";
-hoursTittle.style.color = "#FFF";
-hoursTittle.style.fontFamily = "Inter";
-hoursTittle.style.letterSpacing = "2px";
-hours.appendChild(hoursTittle);
-
-let hoursTittle2 = document.createElement("p");
-hoursTittle2.textContent = "Hours";
-hoursTittle2.style.textAlign = "center";
-hoursTittle2.style.fontSize = "16px";
-hoursTittle2.style.color = "#A5DEFF";
-hoursTittle2.style.fontFamily = "Inter";
-hoursTittle2.style.marginTop = "-20px";
-hours.appendChild(hoursTittle2);
-
-let minutes = document.createElement("div");
-minutes.style.width = "199px";
-minutes.style.height = "199px";
-minutes.style.backgroundColor = "#080F1A";
-minutes.style.borderRadius = "22px";
-horsMinut.appendChild(minutes);
-
-let minutesTittle = document.createElement("h1");
-minutesTittle.textContent = "24";
-minutesTittle.style.textAlign = "center";
-minutesTittle.style.fontSize = "64px";
-minutesTittle.style.color = "#FFF";
-minutesTittle.style.fontFamily = "Inter";
-minutesTittle.style.letterSpacing = "2px";
-minutes.appendChild(minutesTittle);
-
-let minutesTittle2 = document.createElement("p");
-minutesTittle2.textContent = "Minutes";
-minutesTittle2.style.textAlign = "center";
-minutesTittle2.style.fontSize = "16px";
-minutesTittle2.style.color = "#A5DEFF";
-minutesTittle2.style.fontFamily = "Inter";
-minutesTittle2.style.marginTop = "-20px";
-minutes.appendChild(minutesTittle2);
+let march = document.createElement("div");
+march.textContent = "28 Jun 2020";
+march.style.fontSize = "12px";
+march.style.color = "#BFC3CC";
+march.style.letterSpacing = "0.156px";
+namcap.appendChild(march);
 
 
-let sekonds = document.createElement("div");
-sekonds.style.width = "199px";
-sekonds.style.height = "199px";
-sekonds.style.backgroundColor = "#080F1A";
-sekonds.style.borderRadius = "22px";
-horsMinut.appendChild(sekonds);
-
-let sekondsTittle = document.createElement("h1");
-sekondsTittle.textContent = "60";
-sekondsTittle.style.textAlign = "center";
-sekondsTittle.style.fontSize = "64px";
-sekondsTittle.style.color = "#FFF";
-sekondsTittle.style.fontFamily = "Inter";
-sekondsTittle.style.letterSpacing = "2px";
-sekonds.appendChild(sekondsTittle);
-
-let sekondsTittle2 = document.createElement("p");
-sekondsTittle2.textContent = "Seconds";
-sekondsTittle2.style.textAlign = "center";
-sekondsTittle2.style.fontSize = "16px";
-sekondsTittle2.style.color = "#A5DEFF";
-sekondsTittle2.style.fontFamily = "Inter";
-sekondsTittle2.style.marginTop = "-20px";
-sekonds.appendChild(sekondsTittle2);
-
-
-let milsekonds = document.createElement("div");
-milsekonds.style.width = "199px";
-milsekonds.style.height = "199px";
-milsekonds.style.backgroundColor = "#080F1A";
-milsekonds.style.borderRadius = "22px";
-horsMinut.appendChild(milsekonds);
-
-let milsekondsTittle = document.createElement("h1");
-milsekondsTittle.textContent = "60";
-milsekondsTittle.style.textAlign = "center";
-milsekondsTittle.style.fontSize = "64px";
-milsekondsTittle.style.color = "#FFF";
-milsekondsTittle.style.fontFamily = "Inter";
-milsekondsTittle.style.letterSpacing = "2px";
-milsekonds.appendChild(milsekondsTittle);
-
-let milsekondsTittle2 = document.createElement("p");
-milsekondsTittle2.textContent = "Milliseconds";
-milsekondsTittle2.style.textAlign = "center";
-milsekondsTittle2.style.fontSize = "16px";
-milsekondsTittle2.style.color = "#A5DEFF";
-milsekondsTittle2.style.fontFamily = "Inter";
-milsekondsTittle2.style.marginTop = "-20px";
-milsekonds.appendChild(milsekondsTittle2);
-
-
-let startPauza = document.createElement("div");
-startPauza.style.marginTop = "80px";
-startPauza.style.display = "flex";
-startPauza.style.justifyContent = "center";
-startPauza.style.gap = "40px";
-
-
-bac1.appendChild(startPauza);
-
-let btnStart = document.createElement("button");
-btnStart.textContent = "Start"
-btnStart.style.fontSize = "32px"
-btnStart.style.color = "#FFF"
-btnStart.style.width = "185px";
-btnStart.style.height = "61px";
-btnStart.style.backgroundColor = "#080F1A";
-btnStart.style.borderRadius = "13px";
-startPauza.appendChild(btnStart);
-
-
-let btnPause = document.createElement("button");
-btnPause.textContent = "Pause"
-btnPause.style.fontSize = "32px"
-btnPause.style.color = "#FFF"
-btnPause.style.width = "185px";
-btnPause.style.height = "61px";
-btnPause.style.backgroundColor = "#080F1A";
-btnPause.style.borderRadius = "13px";
-startPauza.appendChild(btnPause);
-
-
-let btnReset = document.createElement("button");
-btnReset.textContent = "Reset"
-btnReset.style.fontSize = "32px"
-btnReset.style.color = "#FFF"
-btnReset.style.width = "185px";
-btnReset.style.height = "61px";
-btnReset.style.backgroundColor = "#080F1A";
-btnReset.style.borderRadius = "13px";
-startPauza.appendChild(btnReset);
-
-
+let share = document.createElement("div");
+share.style.backgroundImage = "url(share.png)";
+share.style.width = "32px";
+share.style.height = "32px";
+share.style.backgroundRepeat = "no-repeat";
+share.style.backgroundSize = "cover";
+share.style.marginLeft = "110px";
+myname.appendChild(share);
 
 
