@@ -45,9 +45,9 @@ shift.textContent = `Shift the overall look and feel by adding
 these wonderful touches to 
 furniture in your home`;
 shift.style.color = "#49556B";
-shift.style.fontSize = "20px";
+shift.style.fontSize = "18px";
 shift.style.letterSpacing = "0.42px";
-shift.style.lineHeight = "138%";
+shift.style.lineHeight = "120%";
 shift.style.fontFamily = "Manrope";
 shift.style.fontWeight = "bold";
 shift.style.padding = "10px 59px 0 0";
@@ -59,9 +59,6 @@ Perhaps it felt slightly bare and uninviting. I’ve got some
 simple tips to help ypu make any room feel complete.`;
 ever.style.fontSize = "12.5px";
 ever.style.color = "#73859D";
-ever.style.fontWeight = "500px";
-ever.style.fontHeigth = "20px";
-ever.style.letterSpacing = "0.313px";
 shift.appendChild(ever);
 
 let myname = document.createElement("div");
@@ -85,6 +82,7 @@ namcap.style.fontSize = "12.5px";
 namcap.style.color = "#49556B";
 namcap.style.letterSpacing = "0.188px";
 namcap.style.marginLeft = "16px";
+namcap.style.fontFamily = "Inter";
 myname.appendChild(namcap);
 
 let march = document.createElement("div");
@@ -92,6 +90,7 @@ march.textContent = "28 Jun 2020";
 march.style.fontSize = "12px";
 march.style.color = "#BFC3CC";
 march.style.letterSpacing = "0.156px";
+march.style.fontFamily = "Inter";
 namcap.appendChild(march);
 
 
